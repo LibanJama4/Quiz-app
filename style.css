@@ -1,0 +1,86 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #ddd;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 80%;
+    padding: 20px;
+    margin:25px auto;
+    background-color: darkblue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: white;
+    font-size: 2.5em;
+    
+    font-weight: bolder;
+}
+.header .right{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: seashell;
+    font-size: 1.5em;
+}
+.header .right div:first-child{
+    padding: 10px;
+    border-radius:10px;
+    background: #ddd;
+    color: darkblue;
+}
+.question-card{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5%;
+    background: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.question-card .question{
+    color: white;
+    font-size: 1.75em;
+    margin-bottom: 25px;
+}
+.question-card .answer-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.question-card .answer-card .answer{
+    background: #ddd;
+    color: darkblue;
+    font-size: 1.8em;
+    padding: 10px 25px;
+    border-radius: 10px;
+    flex: 1 1 45%;
+}
+.btn{
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: #ddd;
+    color: darkblue;
+    border: 1px solid white;
+}
+.question-card h4{
+    color:white;
+    font-size: 2em;
+    margin-bottom: 15px;
+
+}
+.checkboxes{
+    display: none;
+}
+.checkboxes:checked + .answer{
+    background:orange;
+}
